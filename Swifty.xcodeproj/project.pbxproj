@@ -10,6 +10,16 @@
 		3F23F55720934BE000E509E1 /* Swifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23F54D20934BE000E509E1 /* Swifty.framework */; };
 		3F23F55C20934BE000E509E1 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F55B20934BE000E509E1 /* SwiftyTests.swift */; };
 		3F23F55E20934BE000E509E1 /* Swifty.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F23F55020934BE000E509E1 /* Swifty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F23F56820934CA400E509E1 /* String+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F56720934CA400E509E1 /* String+Swifty.swift */; };
+		3F23F56A20934CC400E509E1 /* Optional+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F56920934CC400E509E1 /* Optional+Swifty.swift */; };
+		3F23F56C20934D5100E509E1 /* Array+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F56B20934D5100E509E1 /* Array+Swifty.swift */; };
+		86A2748D2093838700D74C53 /* Array+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */; };
+		86A2748F20938AF300D74C53 /* Optional+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2748E20938AF300D74C53 /* Optional+Swifty.swift */; };
+		86A2749120938BE800D74C53 /* Date+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2749020938BE800D74C53 /* Date+Swifty.swift */; };
+		86A2749320938C0500D74C53 /* Int+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2749220938C0500D74C53 /* Int+Swifty.swift */; };
+		86A2749520938C9300D74C53 /* String+SwiftyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2749420938C9300D74C53 /* String+SwiftyTest.swift */; };
+		86A2749720938F0000D74C53 /* Dispatch+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2749620938F0000D74C53 /* Dispatch+Swifty.swift */; };
+		86A274992093966300D74C53 /* Dispatch+SwiftyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A274982093966300D74C53 /* Dispatch+SwiftyTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		3F23F55620934BE000E509E1 /* SwiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F23F55B20934BE000E509E1 /* SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTests.swift; sourceTree = "<group>"; };
 		3F23F55D20934BE000E509E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F23F56720934CA400E509E1 /* String+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Swifty.swift"; sourceTree = "<group>"; };
+		3F23F56920934CC400E509E1 /* Optional+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Swifty.swift"; sourceTree = "<group>"; };
+		3F23F56B20934D5100E509E1 /* Array+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Swifty.swift"; sourceTree = "<group>"; };
+		86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SwiftyTests.swift"; sourceTree = "<group>"; };
+		86A2748E20938AF300D74C53 /* Optional+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Swifty.swift"; sourceTree = "<group>"; };
+		86A2749020938BE800D74C53 /* Date+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Swifty.swift"; sourceTree = "<group>"; };
+		86A2749220938C0500D74C53 /* Int+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Swifty.swift"; sourceTree = "<group>"; };
+		86A2749420938C9300D74C53 /* String+SwiftyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SwiftyTest.swift"; sourceTree = "<group>"; };
+		86A2749620938F0000D74C53 /* Dispatch+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+Swifty.swift"; sourceTree = "<group>"; };
+		86A274982093966300D74C53 /* Dispatch+SwiftyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+SwiftyTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,12 @@
 			children = (
 				3F23F55020934BE000E509E1 /* Swifty.h */,
 				3F23F55120934BE000E509E1 /* Info.plist */,
+				3F23F56720934CA400E509E1 /* String+Swifty.swift */,
+				3F23F56920934CC400E509E1 /* Optional+Swifty.swift */,
+				3F23F56B20934D5100E509E1 /* Array+Swifty.swift */,
+				86A2749020938BE800D74C53 /* Date+Swifty.swift */,
+				86A2749220938C0500D74C53 /* Int+Swifty.swift */,
+				86A2749620938F0000D74C53 /* Dispatch+Swifty.swift */,
 			);
 			path = Swifty;
 			sourceTree = "<group>";
@@ -81,6 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				3F23F55B20934BE000E509E1 /* SwiftyTests.swift */,
+				86A2749420938C9300D74C53 /* String+SwiftyTest.swift */,
+				86A2748E20938AF300D74C53 /* Optional+Swifty.swift */,
+				86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */,
+				86A274982093966300D74C53 /* Dispatch+SwiftyTest.swift */,
 				3F23F55D20934BE000E509E1 /* Info.plist */,
 			);
 			path = SwiftyTests;
@@ -108,6 +138,7 @@
 				3F23F54920934BE000E509E1 /* Frameworks */,
 				3F23F54A20934BE000E509E1 /* Headers */,
 				3F23F54B20934BE000E509E1 /* Resources */,
+				86A2749A209396C800D74C53 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,6 +179,7 @@
 				TargetAttributes = {
 					3F23F54C20934BE000E509E1 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					3F23F55520934BE000E509E1 = {
 						CreatedOnToolsVersion = 9.3;
@@ -189,11 +221,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86A2749A209396C800D74C53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F23F54820934BE000E509E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F23F56C20934D5100E509E1 /* Array+Swifty.swift in Sources */,
+				3F23F56820934CA400E509E1 /* String+Swifty.swift in Sources */,
+				3F23F56A20934CC400E509E1 /* Optional+Swifty.swift in Sources */,
+				86A2749120938BE800D74C53 /* Date+Swifty.swift in Sources */,
+				86A2749720938F0000D74C53 /* Dispatch+Swifty.swift in Sources */,
+				86A2749320938C0500D74C53 /* Int+Swifty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +256,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F23F55C20934BE000E509E1 /* SwiftyTests.swift in Sources */,
+				86A2748D2093838700D74C53 /* Array+SwiftyTests.swift in Sources */,
+				86A274992093966300D74C53 /* Dispatch+SwiftyTest.swift in Sources */,
+				86A2749520938C9300D74C53 /* String+SwiftyTest.swift in Sources */,
+				86A2748F20938AF300D74C53 /* Optional+Swifty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +397,7 @@
 		3F23F56220934BE000E509E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -348,6 +407,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Swifty/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vsccw.Swifty;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +425,7 @@
 		3F23F56320934BE000E509E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +435,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Swifty/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +452,7 @@
 		3F23F56520934BE000E509E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
 				INFOPLIST_FILE = SwiftyTests/Info.plist;
@@ -407,6 +471,7 @@
 		3F23F56620934BE000E509E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
 				INFOPLIST_FILE = SwiftyTests/Info.plist;
