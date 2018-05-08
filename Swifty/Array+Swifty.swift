@@ -82,5 +82,22 @@ public extension Array {
   public var twelfth: Element? {
     return at(11)
   }
-
 }
+
+extension Array where Element: SignedInteger {
+
+  public var sum: Element {
+    return reduce(0, +)
+  }
+
+  public var product: Element {
+    return reduce(1, *)
+  }
+
+  public var min: Element {
+    return 1
+  }
+}
+
+
+

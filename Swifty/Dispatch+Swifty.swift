@@ -17,8 +17,12 @@ public var globalQueue: DispatchQueue {
 }
 
 public extension DispatchQueue {
-  public func delay(_ seconds: Int, execute: @escaping () -> Void) {
-    asyncAfter(deadline: .now() + .nanoseconds(seconds), execute: execute)
+  public func delay(_ duration: DelayInterval, execute: @escaping () -> Void) {
+    asyncAfter(deadline: .now() + duration.timeInterval, execute: execute)
+  }
+
+  public func delay(_ duration: DelayInterval, excute: DispatchWorkItem) {
+    asyncAfter(deadline: .now() + duration.timeInterval, execute: excute)
   }
 
   public func once(_ label: String, execute: () -> Void) {

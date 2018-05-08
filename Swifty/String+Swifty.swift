@@ -9,14 +9,13 @@
 import Foundation
 
 public extension String {
-  public var ns: NSString {
+  public var nsstr: NSString {
     return self as NSString
   }
 }
 
-
 public extension NSString {
-  public var string: String {
+  public var str: String {
     return self as String
   }
 }

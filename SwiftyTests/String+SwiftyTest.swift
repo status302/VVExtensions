@@ -11,13 +11,13 @@ import XCTest
 class StringSwiftyTest: XCTestCase {
   func testNS() {
     let hello = "hello"
-    assert((hello as NSString) == hello.ns)
-    assert(hello.ns.isKind(of: NSString.self))
+    assert((hello as NSString) == hello.nsstr)
+    assert(hello.nsstr.isKind(of: NSString.self))
   }
 
   func testString() {
     let hello: NSString = "hello"
     assert(hello.isKind(of: NSString.self))
-    assert(type(of: hello.string) == String.self)
+    assert(type(of: hello.str) == String.self)
   }
 }
