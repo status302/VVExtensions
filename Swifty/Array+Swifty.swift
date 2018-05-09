@@ -94,8 +94,16 @@ extension Array where Element: SignedInteger {
     return reduce(1, *)
   }
 
-  public var min: Element {
-    return 1
+  public var average: Element {
+    guard count > 0 else { return 0 }
+    return sum / Element(count)
+  }
+
+  public var min: Element? {
+    return self.min()
+  }
+  public var max: Element? {
+    return self.max()
   }
 }
 

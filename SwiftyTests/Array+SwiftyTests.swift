@@ -66,4 +66,28 @@ class ArraySwiftyTests: XCTestCase {
     assert(array.first(10) == [1, 2, 3, 4, 5, 6])
   }
 
+  func testMin() {
+    let array = [7, 1, 5, 4, 5, 6]
+    assert(array.min == 1)
+  }
+
+  func testMax() {
+    let array = [7, 1, 5, 4, 5, 6]
+    assert(array.max == 7)
+  }
+
+  func testSum() {
+    let array = [7, 1, 5, 4, 5, 6]
+    assert(array.sum == 28)
+  }
+
+  func testProduct() {
+    let array = [7, 1, 5, 4, 5, 6]
+    assert(array.product == 4200)
+  }
+
+  func testAverage() {
+    let array = [7, 1, 5, 4, 5, 6]
+    assert(array.average == 28 / 6)
+  }
 }
