@@ -106,6 +106,3 @@ extension Array where Element: SignedInteger {
     return self.max()
   }
 }
-
-
-
