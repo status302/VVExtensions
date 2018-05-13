@@ -23,6 +23,8 @@
 		8662BB0920A808D500CF00B1 /* AssociatedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662BB0820A808D500CF00B1 /* AssociatedKeys.swift */; };
 		8662BB0B20A80B6C00CF00B1 /* NSObject+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662BB0A20A80B6C00CF00B1 /* NSObject+Swifty.swift */; };
 		8662BB0D20A80F7900CF00B1 /* NSObject+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662BB0C20A80F7900CF00B1 /* NSObject+SwiftyTests.swift */; };
+		8662BB0F20A839FF00CF00B1 /* UserDefaults+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662BB0E20A839FF00CF00B1 /* UserDefaults+Swifty.swift */; };
+		8662BB1120A841A800CF00B1 /* UserDefaults+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8662BB1020A841A800CF00B1 /* UserDefaults+SwiftyTests.swift */; };
 		86A2748D2093838700D74C53 /* Array+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */; };
 		86A2748F20938AF300D74C53 /* Optional+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2748E20938AF300D74C53 /* Optional+Swifty.swift */; };
 		86A2749120938BE800D74C53 /* Date+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2749020938BE800D74C53 /* Date+Swifty.swift */; };
@@ -62,6 +64,8 @@
 		8662BB0820A808D500CF00B1 /* AssociatedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedKeys.swift; sourceTree = "<group>"; };
 		8662BB0A20A80B6C00CF00B1 /* NSObject+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Swifty.swift"; sourceTree = "<group>"; };
 		8662BB0C20A80F7900CF00B1 /* NSObject+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+SwiftyTests.swift"; sourceTree = "<group>"; };
+		8662BB0E20A839FF00CF00B1 /* UserDefaults+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Swifty.swift"; sourceTree = "<group>"; };
+		8662BB1020A841A800CF00B1 /* UserDefaults+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SwiftyTests.swift"; sourceTree = "<group>"; };
 		86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SwiftyTests.swift"; sourceTree = "<group>"; };
 		86A2748E20938AF300D74C53 /* Optional+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Swifty.swift"; sourceTree = "<group>"; };
 		86A2749020938BE800D74C53 /* Date+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Swifty.swift"; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				86A2749620938F0000D74C53 /* Dispatch+Swifty.swift */,
 				3F93F31020944B2900435ED9 /* Device+Swifty.swift */,
 				3F93F31220944B4800435ED9 /* Bundle+Swifty.swift */,
+				8662BB0E20A839FF00CF00B1 /* UserDefaults+Swifty.swift */,
 				8662BABE209FDE2700CF00B1 /* UILabel+Swifty.swift */,
 				8662BAC2209FE1AD00CF00B1 /* UIButton+Swifty.swift */,
 				8662BB0620A5F73800CF00B1 /* PlistBox.swift */,
@@ -144,6 +149,7 @@
 				3F23F55D20934BE000E509E1 /* Info.plist */,
 				8662BAC0209FDFC900CF00B1 /* UILabel+SwiftyTests.swift */,
 				8662BB0C20A80F7900CF00B1 /* NSObject+SwiftyTests.swift */,
+				8662BB1020A841A800CF00B1 /* UserDefaults+SwiftyTests.swift */,
 			);
 			path = SwiftyTests;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				3F93F31320944B4800435ED9 /* Bundle+Swifty.swift in Sources */,
 				3F23F56820934CA400E509E1 /* String+Swifty.swift in Sources */,
 				8662BB0920A808D500CF00B1 /* AssociatedKeys.swift in Sources */,
+				8662BB0F20A839FF00CF00B1 /* UserDefaults+Swifty.swift in Sources */,
 				8662BB0720A5F73800CF00B1 /* PlistBox.swift in Sources */,
 				3F23F56A20934CC400E509E1 /* Optional+Swifty.swift in Sources */,
 				86A2749120938BE800D74C53 /* Date+Swifty.swift in Sources */,
@@ -294,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8662BB1120A841A800CF00B1 /* UserDefaults+SwiftyTests.swift in Sources */,
 				3F23F55C20934BE000E509E1 /* SwiftyTests.swift in Sources */,
 				8662BB0D20A80F7900CF00B1 /* NSObject+SwiftyTests.swift in Sources */,
 				86A2748D2093838700D74C53 /* Array+SwiftyTests.swift in Sources */,
