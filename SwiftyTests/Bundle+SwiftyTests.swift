@@ -11,9 +11,24 @@ import Swifty
 import UIKit
 
 class Bundle_SwiftyTests: XCTestCase {
-  func testInfo() {
+  lazy var info: Bundle.Info? = {
     let bundle = Bundle(identifier: "com.vsccw.Swifty")
-    print(bundle?.infoDictionary)
-    XCTAssertTrue(true)
+    return bundle?.info
+  }()
+
+  func testInfo() {
+    XCTAssert(info != nil)
+  }
+
+  func testInfoVersion() {
+    XCTAssert(info?.version == "1.0")
+  }
+
+  func testInfoBuild() {
+    XCTAssert(info?.build == "1")
+  }
+
+  func testInfoOsMinVersion() {
+    XCTAssert(info?.minOSVersion == "9.0")
   }
 }

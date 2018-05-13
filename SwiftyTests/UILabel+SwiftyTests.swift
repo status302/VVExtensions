@@ -16,6 +16,6 @@ class UILabel_SwiftyTests: XCTestCase {
     label.frame = CGRect(origin: .zero, size: CGSize(width: 100, height: 0  ))
     let originHeight = label.contentHeight(maxWidth: 100)
     label.sizeToFit()
-    assert(originHeight == label.frame.height)
+    XCTAssert(originHeight == label.frame.height)
   }
 }

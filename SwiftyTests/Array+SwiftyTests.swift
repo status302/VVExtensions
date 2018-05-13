@@ -14,80 +14,80 @@ class ArraySwiftyTests: XCTestCase {
   func testRemoveFirstSafely() {
     var array: [String] = []
     let item = array.removeFirstSafely()
-    assert(item == nil)
+    XCTAssert(item == nil)
 
     var array1 = ["1"]
     let item1 = array1.removeFirstSafely()
-    assert(item1 == "1")
-    assert(array1.isEmpty)
+    XCTAssert(item1 == "1")
+    XCTAssert(array1.isEmpty)
   }
 
   func testRemoveLastSafely() {
     var array: [String] = []
     let item = array.removeLastSafely()
-    assert(item == nil)
+    XCTAssert(item == nil)
 
     var array1 = ["1"]
     let item1 = array1.removeLastSafely()
-    assert(item1 == "1")
-    assert(array1.isEmpty)
+    XCTAssert(item1 == "1")
+    XCTAssert(array1.isEmpty)
   }
 
   func testInsertSafely() {
     var array: [String] = []
     array.insertSafely("123", at: 10)
-    assert(array.count == 1)
-    assert(array[0] == "123")
+    XCTAssert(array.count == 1)
+    XCTAssert(array[0] == "123")
   }
 
   func testAt() {
     let array = [1, 2, 3, 4, 5]
-    assert(array.at(0) == 1)
-    assert(array.at(1) == 2)
-    assert(array.at(5) == nil)
+    XCTAssert(array.at(0) == 1)
+    XCTAssert(array.at(1) == 2)
+    XCTAssert(array.at(5) == nil)
   }
 
   func testIndex() {
     let array = [1, 2, 3, 4, 5, 6]
-    assert(array.second == 2)
-    assert(array.third == 3)
-    assert(array.eleventh == nil)
+    XCTAssert(array.second == 2)
+    XCTAssert(array.third == 3)
+    XCTAssert(array.eleventh == nil)
   }
 
   func testLast() {
     let array = [1, 2, 3, 4, 5, 6]
-    assert(array.last(2) == [5, 6])
-    assert(array.last(10) == [1, 2, 3, 4, 5, 6])
+    XCTAssert(array.last(2) == [5, 6])
+    XCTAssert(array.last(10) == [1, 2, 3, 4, 5, 6])
   }
 
   func testFirst() {
     let array = [1, 2, 3, 4, 5, 6]
-    assert(array.first(2) == [1, 2])
-    assert(array.first(10) == [1, 2, 3, 4, 5, 6])
+    XCTAssert(array.first(2) == [1, 2])
+    XCTAssert(array.first(10) == [1, 2, 3, 4, 5, 6])
   }
 
   func testMin() {
     let array = [7, 1, 5, 4, 5, 6]
-    assert(array.min == 1)
+    XCTAssert(array.min == 1)
   }
 
   func testMax() {
     let array = [7, 1, 5, 4, 5, 6]
-    assert(array.max == 7)
+    XCTAssert(array.max == 7)
   }
 
   func testSum() {
     let array = [7, 1, 5, 4, 5, 6]
-    assert(array.sum == 28)
+    XCTAssert(array.sum == 28)
   }
 
   func testProduct() {
     let array = [7, 1, 5, 4, 5, 6]
-    assert(array.product == 4200)
+    XCTAssert(array.product == 4200)
   }
 
   func testAverage() {
     let array = [7, 1, 5, 4, 5, 6]
-    assert(array.average == 28 / 6)
+    XCTAssert(array.average == 28 / 6)
   }
 }

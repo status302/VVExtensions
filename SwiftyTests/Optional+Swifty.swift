@@ -12,13 +12,13 @@ import XCTest
 class OptionalSwifty: XCTestCase {
   func testOr() {
     let str: String? = nil
-    assert(str.or("123") == "123")
-    assert(str == nil)
+    XCTAssert(str.or("123") == "123")
+    XCTAssert(str == nil)
   }
 
   func testOrEqualTo() {
     var str: String? = nil
     str = (str ?= "hello")
-    assert(str == "hello")
+    XCTAssert(str == "hello")
   }
 }

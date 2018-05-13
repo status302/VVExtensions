@@ -14,7 +14,7 @@ class DispatchSwiftyTests: XCTestCase {
     let before = Date().timeIntervalSinceReferenceDate
     mainQueue.delay(1.seconds) {
       let now = Date().timeIntervalSinceReferenceDate
-      assert(now - before >= 1)
+      XCTAssert(now - before >= 1)
     }
   }
 
@@ -22,7 +22,7 @@ class DispatchSwiftyTests: XCTestCase {
     let before = Date().timeIntervalSinceReferenceDate
     mainQueue.delay(1.seconds, excute: DispatchWorkItem(block: {
       let now = Date().timeIntervalSinceReferenceDate
-      XCTAssertTrue(now - before >= 1)
+      XCTAssert(now - before >= 1)
     }))
   }
 
@@ -45,16 +45,16 @@ class DispatchSwiftyTests: XCTestCase {
   func testOnce() {
     let once = OnceClass()
     once.onceCountPlus()
-    XCTAssertTrue(once.count == 1)
+    XCTAssert(once.count == 1)
     once.onceCountPlus()
-    XCTAssertTrue(once.count == 1)
+    XCTAssert(once.count == 1)
 
     once.mutableCountPlus()
-    XCTAssertTrue(once.otherCount == 1)
+    XCTAssert(once.otherCount == 1)
     once.mutableCountPlus()
-    XCTAssertTrue(once.otherCount == 2)
+    XCTAssert(once.otherCount == 2)
     once.mutableCountPlus()
-    XCTAssertTrue(once.otherCount == 3)
+    XCTAssert(once.otherCount == 3)
   }
 
 }
