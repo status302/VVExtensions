@@ -8,16 +8,9 @@
 
 import Foundation
 
-infix operator ?= : AssignmentPrecedence
-
 public extension Optional {
 
   public func or(_ value: Wrapped) -> Wrapped {
     return self ?? value
-  }
-
-  public static func ?= (lhs: Optional, rhs: Wrapped) -> Wrapped {
-    guard let value = lhs else { return rhs }
-    return value
   }
 }
