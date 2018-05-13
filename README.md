@@ -1,10 +1,8 @@
-Swifty: a awesome extensions and helpers for swift.
-===
-[![Build Status](https://travis-ci.org/qiuncheng/Swifty.svg?branch=master)](https://travis-ci.org/qiuncheng/Swifty)
-
 # Swifty
 
 > A good extension will help you a lot when Swift development.
+
+[![Build Status](https://travis-ci.org/qiuncheng/Swifty.svg?branch=master)](https://travis-ci.org/qiuncheng/Swifty)
 
 ## Usage
 
