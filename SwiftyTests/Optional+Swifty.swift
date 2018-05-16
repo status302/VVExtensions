@@ -18,7 +18,29 @@ class OptionalSwifty: XCTestCase {
 
   func testOrEqualTo() {
     var str: String? = nil
-    str = (str ?= "hello")
+    str = str ?? "hello"
     XCTAssert(str == "hello")
+  }
+
+  func testArrayNil() {
+    var arr: [String]?
+    XCTAssert(arr.isNilOrEmpty)
+    arr = ["hello"]
+    XCTAssert(!arr.isNilOrEmpty)
+  }
+
+  func testApply() {
+    var str: String?
+    var notApply = false
+    str.apply { _ in 
+      notApply = true
+    }
+    XCTAssert(!notApply)
+
+    str = "hello"
+    str.apply { _ in
+      notApply = true
+    }
+    XCTAssert(notApply)
   }
 }
