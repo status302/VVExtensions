@@ -26,4 +26,16 @@ class UserDefaults_SwiftyTests: XCTestCase {
     defaults["bool_key"] = true
     XCTAssert(defaults["bool_key"] == true)
   }
+
+  func testObject() {
+    let hello = "hello world"
+    let data = hello.data(using: .utf8)
+    defaults["hello"] = data
+    XCTAssert(true)
+  }
+
+  func testNumber() {
+    defaults["number_key"] = 10
+    XCTAssert(defaults["number_key"].number == 10)
+  }
 }
