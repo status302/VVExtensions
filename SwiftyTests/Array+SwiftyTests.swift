@@ -10,7 +10,6 @@ import XCTest
 @testable import Swifty
 
 class ArraySwiftyTests: XCTestCase {
-  
   func testRemoveFirstSafely() {
     var array: [String] = []
     let item = array.removeFirstSafely()

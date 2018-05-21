@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 struct AssociatedKey {
   internal static let keyOfInfoPlist = "com.vsccw.Swifty.infoPlist"
 }
