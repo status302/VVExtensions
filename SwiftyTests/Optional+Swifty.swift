@@ -16,10 +16,12 @@ class OptionalSwifty: XCTestCase {
     XCTAssert(str == nil)
   }
 
-  func testOrEqualTo() {
-    var str: String? = nil
-    str = str ?? "hello"
-    XCTAssert(str == "hello")
+  func testIsNil() {
+    var int: Int?
+    XCTAssert(int.isNil)
+    int = 1
+    XCTAssert(int == 1)
+    XCTAssert(!int.isNil)
   }
 
   func testArrayNil() {
