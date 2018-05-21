@@ -1,0 +1,17 @@
+disabled_rules:
+  - type_name
+  - variable_name
+  - todo
+  - function_name
+  - vertical_whitespace
+  - trailing_whitespace
+
+included:
+  - Swity
+  - SwiftyTests
+
+line_length: 200
+
+type_body_length:
+  - 300
+  - 400
