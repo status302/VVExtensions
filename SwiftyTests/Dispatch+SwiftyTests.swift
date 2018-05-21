@@ -26,7 +26,6 @@ class DispatchSwiftyTests: XCTestCase {
     }))
   }
 
-
   class OnceClass {
     var count = 0
     var otherCount = 0
