@@ -8,141 +8,86 @@
 
 import Foundation
 
+public final class Key<T>: Keys { }
+
+public class Keys: RawRepresentable, Hashable {
+
+  public typealias RawValue = String
+
+  public let rawValue: String
+
+  public var hashValue: Int { return rawValue.hashValue }
+
+  public required init?(rawValue: String) {
+    self.rawValue = rawValue
+  }
+
+  public init(_ key: String) {
+    self.rawValue = key
+  }
+}
+
 public extension UserDefaults {
-  
-  public subscript<T> (key: String) -> T? {
-    get {
-      return value(forKey: key) as? T
-    }
+  public subscript (key: Key<Bool>) -> Bool {
     set {
-      set(newValue, forKey: key)
+      set(newValue, forKey: key.rawValue)
     }
-  }
-
-  public subscript (key: String) -> Box<Any?> {
     get {
-      let result = value(forKey: key)
-      return Box(result)
+      return bool(forKey: key.rawValue)
     }
+  }
+
+  public subscript (key: Key<String>) -> String? {
     set {
-      set(newValue.value, forKey: key)
+      set(newValue, forKey: key.rawValue)
+    }
+    get {
+      return string(forKey: key.rawValue)
     }
   }
-}
 
-public struct Box<T> {
-  public let value: T
-  public init(_ value: T) {
-    self.value = value
-  }
-}
-
-public extension Box {
-  public var string: String? {
-    return value as? String
+  public subscript (key: Key<Int>) -> Int {
+    set {
+      set(newValue, forKey: key.rawValue)
+    }
+    get {
+      return integer(forKey: key.rawValue)
+    }
   }
 
-  public var stringValue: String {
-    return string.or("")
-  }
-}
-
-public extension Box {
-  public var number: NSNumber? {
-    return value as? NSNumber
-  }
-
-  public var numberValue: NSNumber {
-    return number.or(0)
-  }
-}
-
-public extension Box {
-  public var int: Int? {
-    return number?.intValue
+  public subscript (key: Key<[Any]>) -> [Any]? {
+    set {
+      set(newValue, forKey: key.rawValue)
+    }
+    get {
+      return array(forKey: key.rawValue)
+    }
   }
 
-  public var intValue: Int {
-    return int.or(0)
-  }
-}
-
-public extension Box {
-  var uInt: UInt? {
-    return number?.uintValue
-  }
-
-  var uIntValue: UInt {
-    return uInt.or(0)
-  }
-}
-
-public extension Box {
-  public var int8: Int8? {
-    return number?.int8Value
+  public subscript (key: Key<Data>) -> Data? {
+    set {
+      set(newValue, forKey: key.rawValue)
+    }
+    get {
+      return data(forKey: key.rawValue)
+    }
   }
 
-  public var int8Value: Int8 {
-    return int8.or(0)
-  }
-}
-
-public extension Box {
-  public var uInt8: UInt8? {
-    return number?.uint8Value
-  }
-
-  public var uInt8Value: UInt8 {
-    return uInt8.or(0)
-  }
-}
-
-public extension Box {
-  public var int16: Int16? {
-    return number?.int16Value
+  public subscript (key: Key<URL>) -> URL? {
+    set {
+      set(newValue, forKey: key.rawValue)
+    }
+    get {
+      return url(forKey: key.rawValue)
+    }
   }
 
-  public var int16Value: Int16 {
-    return int16.or(0)
-  }
-}
-
-public extension Box {
-  public var uInt16: UInt16? {
-    return number?.uint16Value
-  }
-
-  public var uInt16Value: UInt16 {
-    return uInt16.or(0)
-  }
-}
-
-public extension Box {
-  public var int32: Int32? {
-    return number?.int32Value
-  }
-
-  public var int32Value: Int32 {
-    return int32.or(0)
-  }
-}
-
-public extension Box {
-  public var uInt32: UInt32? {
-    return number?.uint32Value
-  }
-
-  public var uInt32Value: UInt32 {
-    return uInt32.or(0)
-  }
-}
-
-public extension Box {
-  public var float: Float? {
-    return number?.floatValue
-  }
-
-  public var floatValue: Float {
-    return (number?.floatValue).or(0)
+  public subscript (key: Key<[String: Any?]>) -> [String: Any?]? {
+    set {
+      set(newValue, forKey: key.rawValue)
+    }
+    get {
+      return dictionary(forKey: key.rawValue)
+    }
   }
 }

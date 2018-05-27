@@ -84,7 +84,19 @@ public extension Array {
   }
 }
 
-extension Array where Element: SignedInteger {
+public extension Array where Element: Equatable {
+  public func isEqual(to array: [Element]) -> Bool {
+    guard count == array.count else { return false }
+    for i in 0 ..< count {
+      if at(i) != array.at(i) {
+        return false
+      }
+    }
+    return true
+  }
+}
+
+public extension Array where Element: SignedInteger {
 
   public var sum: Element {
     return reduce(0, +)
@@ -104,5 +116,11 @@ extension Array where Element: SignedInteger {
   }
   public var max: Element? {
     return self.max()
+  }
+}
+
+public extension Array where Element: CustomStringConvertible {
+  public var string: String {
+    return reduce("", { $0 + $1.description })
   }
 }
