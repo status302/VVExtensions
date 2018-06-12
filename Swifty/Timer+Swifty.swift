@@ -21,3 +21,39 @@ public extension Timer {
     self.init(fireAt: date, interval: interval, target: proxy, selector: WeakProxy.timerSelector, userInfo: userInfo, repeats: repeats)
   }
 }
+
+public typealias Block = () -> Void
+
+internal class TimerAction {
+  var block: Block
+
+  internal init(block: @escaping Block) {
+    self.block = block
+  }
+
+  @objc internal func fire() {
+    block()
+  }
+}
+
+public extension Timer {
+  public convenience init(fromNow ti: TimeInterval, block: @escaping Block) {
+    let action = TimerAction(block: block)
+    self.init(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: false)
+  }
+
+  public convenience init(every ti: TimeInterval, block: @escaping Block) {
+    let action = TimerAction(block: block)
+    self.init(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: true)
+  }
+
+  public class func schedule(fromNow ti: TimeInterval, block: @escaping Block) -> Timer {
+    let action = TimerAction(block: block)
+    return Timer.scheduledTimer(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: false)
+  }
+
+  public class func schedule(every ti: TimeInterval, block: @escaping Block) -> Timer {
+    let action = TimerAction(block: block)
+    return Timer.scheduledTimer(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: true)
+  }
+}
