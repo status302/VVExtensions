@@ -38,6 +38,8 @@
 		86A2749720938F0000D74C53 /* Dispatch+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2749620938F0000D74C53 /* Dispatch+Swifty.swift */; };
 		86A274992093966300D74C53 /* Dispatch+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A274982093966300D74C53 /* Dispatch+SwiftyTests.swift */; };
 		86A87F1B20BB07E90046FB10 /* Dictionary+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A87F1A20BB07E90046FB10 /* Dictionary+Swifty.swift */; };
+		86ABC5F820C6F367007DA100 /* UIImage+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ABC5F720C6F367007DA100 /* UIImage+Swifty.swift */; };
+		86ABC5FA20C6F4EF007DA100 /* UIColor+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ABC5F920C6F4EF007DA100 /* UIColor+Swifty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		86A2749620938F0000D74C53 /* Dispatch+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+Swifty.swift"; sourceTree = "<group>"; };
 		86A274982093966300D74C53 /* Dispatch+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+SwiftyTests.swift"; sourceTree = "<group>"; };
 		86A87F1A20BB07E90046FB10 /* Dictionary+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Swifty.swift"; sourceTree = "<group>"; };
+		86ABC5F720C6F367007DA100 /* UIImage+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Swifty.swift"; sourceTree = "<group>"; };
+		86ABC5F920C6F4EF007DA100 /* UIColor+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Swifty.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				8662BB0E20A839FF00CF00B1 /* UserDefaults+Swifty.swift */,
 				8662BABE209FDE2700CF00B1 /* UILabel+Swifty.swift */,
 				8662BAC2209FE1AD00CF00B1 /* UIButton+Swifty.swift */,
+				86ABC5F720C6F367007DA100 /* UIImage+Swifty.swift */,
+				86ABC5F920C6F4EF007DA100 /* UIColor+Swifty.swift */,
 				8662BB0620A5F73800CF00B1 /* PlistBox.swift */,
 				8662BB0820A808D500CF00B1 /* AssociatedKeys.swift */,
 				869A1E4520B333CC00DB0751 /* Bool+Swifty.swift */,
@@ -318,6 +324,7 @@
 				8662BB0920A808D500CF00B1 /* AssociatedKeys.swift in Sources */,
 				8662BB0F20A839FF00CF00B1 /* UserDefaults+Swifty.swift in Sources */,
 				8674E49720D029CD00425380 /* CADisplayLink+Swifty.swift in Sources */,
+				86ABC5FA20C6F4EF007DA100 /* UIColor+Swifty.swift in Sources */,
 				8662BB0720A5F73800CF00B1 /* PlistBox.swift in Sources */,
 				869A1E4620B333CC00DB0751 /* Bool+Swifty.swift in Sources */,
 				8674E49520D0293F00425380 /* WeakProxy.swift in Sources */,
@@ -328,6 +335,7 @@
 				8674E49320D0267000425380 /* Timer+Swifty.swift in Sources */,
 				86A2749720938F0000D74C53 /* Dispatch+Swifty.swift in Sources */,
 				8662BABF209FDE2700CF00B1 /* UILabel+Swifty.swift in Sources */,
+				86ABC5F820C6F367007DA100 /* UIImage+Swifty.swift in Sources */,
 				8662BAC3209FE1AD00CF00B1 /* UIButton+Swifty.swift in Sources */,
 				86A2749320938C0500D74C53 /* Int+Swifty.swift in Sources */,
 				3F93F31120944B2900435ED9 /* Device+Swifty.swift in Sources */,

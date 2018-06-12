@@ -9,24 +9,24 @@
 import Foundation
 
 public class PlistBox<T: Codable> {
-  enum PlistError: Error {
+  public enum PlistError: Error {
     case pathInvalid
     case infoPlistNotFound
   }
-
+  
   public private(set) var path: String
-
+  
   public init(path: String) throws {
     guard FileManager.default.fileExists(atPath: path) else {
       throw PlistError.pathInvalid
     }
     self.path = path
   }
-
+  
   public func decode() throws -> T? {
     let url = URL(fileURLWithPath: path)
     let data = try Data(contentsOf: url)
-
+    
     let decoder = PropertyListDecoder()
     let value = try decoder.decode(T.self, from: data)
     return value
