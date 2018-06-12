@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Swifty
 
 class StringSwiftyTest: XCTestCase {
   func testNS() {
@@ -19,5 +20,10 @@ class StringSwiftyTest: XCTestCase {
     let hello: NSString = "hello"
     XCTAssert(hello.isKind(of: NSString.self))
     XCTAssert(type(of: hello.str) == String.self)
+  }
+
+  func testRandomPassword() {
+    let password = String.randomPassword(length: 5)
+    XCTAssertEqual(password.count, 5)
   }
 }

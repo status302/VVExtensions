@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension Int {
-
+public func random(_ range:Range<Int>) -> Int
+{
+  return range.lowerBound + Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound)))
 }
-
 
 /// extension for DispatchTimeInterval
 public extension Int {
