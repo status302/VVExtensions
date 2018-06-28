@@ -124,3 +124,11 @@ public extension Array where Element: CustomStringConvertible {
     return reduce("", { $0 + $1.description })
   }
 }
+
+public extension Array {
+  public var random: Element? {
+    guard count > 0 else { return nil }
+    let index = Int(arc4random_uniform(UInt32(count)))
+    return at(index)
+  }
+}
