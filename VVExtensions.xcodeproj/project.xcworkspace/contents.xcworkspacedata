@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Swifty.xcodeproj">
+      location = "self:/Users/qiuncheng/Documents/github/Swifty/VVExtensions.xcodeproj">
    </FileRef>
 </Workspace>

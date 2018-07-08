@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F23F54C20934BE000E509E1"
-               BuildableName = "Swifty.framework"
-               BlueprintName = "Swifty"
-               ReferencedContainer = "container:Swifty.xcodeproj">
+               BuildableName = "VVExtensions.framework"
+               BlueprintName = "VVExtensions"
+               ReferencedContainer = "container:VVExtensions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F23F55520934BE000E509E1"
-               BuildableName = "SwiftyTests.xctest"
-               BlueprintName = "SwiftyTests"
-               ReferencedContainer = "container:Swifty.xcodeproj">
+               BuildableName = "VVExtensionsTests.xctest"
+               BlueprintName = "VVExtensionsTests"
+               ReferencedContainer = "container:VVExtensions.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F23F54C20934BE000E509E1"
-            BuildableName = "Swifty.framework"
-            BlueprintName = "Swifty"
-            ReferencedContainer = "container:Swifty.xcodeproj">
+            BuildableName = "VVExtensions.framework"
+            BlueprintName = "VVExtensions"
+            ReferencedContainer = "container:VVExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F23F54C20934BE000E509E1"
-            BuildableName = "Swifty.framework"
-            BlueprintName = "Swifty"
-            ReferencedContainer = "container:Swifty.xcodeproj">
+            BuildableName = "VVExtensions.framework"
+            BlueprintName = "VVExtensions"
+            ReferencedContainer = "container:VVExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F23F54C20934BE000E509E1"
-            BuildableName = "Swifty.framework"
-            BlueprintName = "Swifty"
-            ReferencedContainer = "container:Swifty.xcodeproj">
+            BuildableName = "VVExtensions.framework"
+            BlueprintName = "VVExtensions"
+            ReferencedContainer = "container:VVExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

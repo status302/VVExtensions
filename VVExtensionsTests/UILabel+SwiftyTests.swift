@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Swifty
+import VVExtensions
 
 class UILabel_SwiftyTests: XCTestCase {
   func testContentHeight() {

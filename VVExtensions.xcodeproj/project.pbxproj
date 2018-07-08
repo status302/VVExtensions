@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F23F55720934BE000E509E1 /* Swifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23F54D20934BE000E509E1 /* Swifty.framework */; };
+		3F23F55720934BE000E509E1 /* VVExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23F54D20934BE000E509E1 /* VVExtensions.framework */; };
 		3F23F55C20934BE000E509E1 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F55B20934BE000E509E1 /* SwiftyTests.swift */; };
-		3F23F55E20934BE000E509E1 /* Swifty.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F23F55020934BE000E509E1 /* Swifty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F23F55E20934BE000E509E1 /* VVExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F23F55020934BE000E509E1 /* VVExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F23F56820934CA400E509E1 /* String+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F56720934CA400E509E1 /* String+Swifty.swift */; };
 		3F23F56A20934CC400E509E1 /* Optional+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F56920934CC400E509E1 /* Optional+Swifty.swift */; };
 		3F23F56C20934D5100E509E1 /* Array+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23F56B20934D5100E509E1 /* Array+Swifty.swift */; };
@@ -53,10 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F23F54D20934BE000E509E1 /* Swifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F23F55020934BE000E509E1 /* Swifty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swifty.h; sourceTree = "<group>"; };
+		3F23F54D20934BE000E509E1 /* VVExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VVExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F23F55020934BE000E509E1 /* VVExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVExtensions.h; sourceTree = "<group>"; };
 		3F23F55120934BE000E509E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F23F55620934BE000E509E1 /* SwiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F23F55620934BE000E509E1 /* VVExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F23F55B20934BE000E509E1 /* SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTests.swift; sourceTree = "<group>"; };
 		3F23F55D20934BE000E509E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F23F56720934CA400E509E1 /* String+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Swifty.swift"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F23F55720934BE000E509E1 /* Swifty.framework in Frameworks */,
+				3F23F55720934BE000E509E1 /* VVExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +113,8 @@
 		3F23F54320934BE000E509E1 = {
 			isa = PBXGroup;
 			children = (
-				3F23F54F20934BE000E509E1 /* Swifty */,
-				3F23F55A20934BE000E509E1 /* SwiftyTests */,
+				3F23F54F20934BE000E509E1 /* VVExtensions */,
+				3F23F55A20934BE000E509E1 /* VVExtensionsTests */,
 				3F23F54E20934BE000E509E1 /* Products */,
 			);
 			indentWidth = 2;
@@ -124,16 +124,16 @@
 		3F23F54E20934BE000E509E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F23F54D20934BE000E509E1 /* Swifty.framework */,
-				3F23F55620934BE000E509E1 /* SwiftyTests.xctest */,
+				3F23F54D20934BE000E509E1 /* VVExtensions.framework */,
+				3F23F55620934BE000E509E1 /* VVExtensionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3F23F54F20934BE000E509E1 /* Swifty */ = {
+		3F23F54F20934BE000E509E1 /* VVExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				3F23F55020934BE000E509E1 /* Swifty.h */,
+				3F23F55020934BE000E509E1 /* VVExtensions.h */,
 				3F23F55120934BE000E509E1 /* Info.plist */,
 				8662BB0A20A80B6C00CF00B1 /* NSObject+Swifty.swift */,
 				3F23F56720934CA400E509E1 /* String+Swifty.swift */,
@@ -157,10 +157,10 @@
 				8674E49620D029CD00425380 /* CADisplayLink+Swifty.swift */,
 				8674E49420D0293F00425380 /* WeakProxy.swift */,
 			);
-			path = Swifty;
+			path = VVExtensions;
 			sourceTree = "<group>";
 		};
-		3F23F55A20934BE000E509E1 /* SwiftyTests */ = {
+		3F23F55A20934BE000E509E1 /* VVExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
 				3F23F55B20934BE000E509E1 /* SwiftyTests.swift */,
@@ -175,7 +175,7 @@
 				869A1E4820B3384C00DB0751 /* Bool+SwiftyTests.swift */,
 				8662BB1020A841A800CF00B1 /* UserDefaults+SwiftyTests.swift */,
 			);
-			path = SwiftyTests;
+			path = VVExtensionsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,16 +185,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F23F55E20934BE000E509E1 /* Swifty.h in Headers */,
+				3F23F55E20934BE000E509E1 /* VVExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3F23F54C20934BE000E509E1 /* Swifty */ = {
+		3F23F54C20934BE000E509E1 /* VVExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F23F56120934BE000E509E1 /* Build configuration list for PBXNativeTarget "Swifty" */;
+			buildConfigurationList = 3F23F56120934BE000E509E1 /* Build configuration list for PBXNativeTarget "VVExtensions" */;
 			buildPhases = (
 				3F23F54820934BE000E509E1 /* Sources */,
 				3F23F54920934BE000E509E1 /* Frameworks */,
@@ -206,14 +206,14 @@
 			);
 			dependencies = (
 			);
-			name = Swifty;
+			name = VVExtensions;
 			productName = Swifty;
-			productReference = 3F23F54D20934BE000E509E1 /* Swifty.framework */;
+			productReference = 3F23F54D20934BE000E509E1 /* VVExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3F23F55520934BE000E509E1 /* SwiftyTests */ = {
+		3F23F55520934BE000E509E1 /* VVExtensionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F23F56420934BE000E509E1 /* Build configuration list for PBXNativeTarget "SwiftyTests" */;
+			buildConfigurationList = 3F23F56420934BE000E509E1 /* Build configuration list for PBXNativeTarget "VVExtensionsTests" */;
 			buildPhases = (
 				3F23F55220934BE000E509E1 /* Sources */,
 				3F23F55320934BE000E509E1 /* Frameworks */,
@@ -225,9 +225,9 @@
 			dependencies = (
 				3F23F55920934BE000E509E1 /* PBXTargetDependency */,
 			);
-			name = SwiftyTests;
+			name = VVExtensionsTests;
 			productName = SwiftyTests;
-			productReference = 3F23F55620934BE000E509E1 /* SwiftyTests.xctest */;
+			productReference = 3F23F55620934BE000E509E1 /* VVExtensionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F23F54720934BE000E509E1 /* Build configuration list for PBXProject "Swifty" */;
+			buildConfigurationList = 3F23F54720934BE000E509E1 /* Build configuration list for PBXProject "VVExtensions" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,8 +261,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F23F54C20934BE000E509E1 /* Swifty */,
-				3F23F55520934BE000E509E1 /* SwiftyTests */,
+				3F23F54C20934BE000E509E1 /* VVExtensions */,
+				3F23F55520934BE000E509E1 /* VVExtensionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +364,7 @@
 /* Begin PBXTargetDependency section */
 		3F23F55920934BE000E509E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3F23F54C20934BE000E509E1 /* Swifty */;
+			target = 3F23F54C20934BE000E509E1 /* VVExtensions */;
 			targetProxy = 3F23F55820934BE000E509E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -501,7 +501,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Swifty/Info.plist;
+				INFOPLIST_FILE = VVExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,7 +529,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Swifty/Info.plist;
+				INFOPLIST_FILE = VVExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -551,7 +551,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
-				INFOPLIST_FILE = SwiftyTests/Info.plist;
+				INFOPLIST_FILE = VVExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +570,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Z9QGDZHJM;
-				INFOPLIST_FILE = SwiftyTests/Info.plist;
+				INFOPLIST_FILE = VVExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F23F54720934BE000E509E1 /* Build configuration list for PBXProject "Swifty" */ = {
+		3F23F54720934BE000E509E1 /* Build configuration list for PBXProject "VVExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F23F55F20934BE000E509E1 /* Debug */,
@@ -595,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F23F56120934BE000E509E1 /* Build configuration list for PBXNativeTarget "Swifty" */ = {
+		3F23F56120934BE000E509E1 /* Build configuration list for PBXNativeTarget "VVExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F23F56220934BE000E509E1 /* Debug */,
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F23F56420934BE000E509E1 /* Build configuration list for PBXNativeTarget "SwiftyTests" */ = {
+		3F23F56420934BE000E509E1 /* Build configuration list for PBXNativeTarget "VVExtensionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F23F56520934BE000E509E1 /* Debug */,

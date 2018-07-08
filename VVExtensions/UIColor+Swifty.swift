@@ -47,15 +47,13 @@ public extension UIColor {
     var alpha: CGFloat = 0
     if getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
       return Components(red: red, green: green, blue: blue, alpha: alpha)
-    }
-    else if let components = cgColor.components, components.count > 3 {
+    } else if let components = cgColor.components, components.count > 3 {
       let red = components[0]
       let green = components[1]
       let blue = components[2]
       let alpha = components[3]
       return Components(red: red, green: green, blue: blue, alpha: alpha)
-    }
-    else {
+    } else {
       return Components(red: 0, green: 0, blue: 0, alpha: 0)
     }
   }
@@ -69,4 +67,3 @@ public extension UIColor {
                       alpha: end.alpha - begin.alpha)
   }
 }
-

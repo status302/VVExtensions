@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Swifty
+import VVExtensions
 import UIKit
 
 class Bundle_SwiftyTests: XCTestCase {

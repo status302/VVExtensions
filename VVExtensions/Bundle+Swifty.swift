@@ -14,12 +14,6 @@ public var mainBundle: Bundle {
 
 extension Bundle {
   public struct Info: Codable {
-    public let version: String
-    public let bundleName: String
-    public let bundleIdentifier: String
-    public let build: String
-    public let minOSVersion: String
-    public let developmentRegion: String
 
     enum CodingKeys: String, CodingKey {
       case version = "CFBundleShortVersionString"
@@ -29,6 +23,13 @@ extension Bundle {
       case minOSVersion = "MinimumOSVersion"
       case developmentRegion = "CFBundleDevelopmentRegion"
     }
+
+    public let version: String
+    public let bundleName: String
+    public let bundleIdentifier: String
+    public let build: String
+    public let minOSVersion: String
+    public let developmentRegion: String
   }
 
   public var info: Info? {

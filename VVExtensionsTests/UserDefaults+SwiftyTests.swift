@@ -7,9 +7,9 @@
 //
 
 import XCTest
-import Swifty
+import VVExtensions
 
-extension Swifty.Keys {
+extension VVExtensions.Keys {
   static let boolKey = Key<Bool>("bool_key")
   static let stringKey = Key<String>("string_key")
   static let intKey = Key<Int>("int_key")

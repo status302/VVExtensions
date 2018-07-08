@@ -11,10 +11,8 @@ import Foundation
 extension Dictionary where Value: Equatable {
   public func isEqual(to dict: Dictionary) -> Bool {
     guard count == dict.count else { return false }
-    for (key, value) in self {
-      if dict[key] != value {
-        return false
-      }
+    if contains(where: { $0.value != dict[$0.key] }) {
+      return false
     }
     return true
   }
