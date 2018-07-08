@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Swifty
+import VVExtensions
 
 class StringSwiftyTest: XCTestCase {
   func testNS() {
