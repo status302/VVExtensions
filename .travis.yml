@@ -4,8 +4,8 @@
 
 osx_image: xcode9.3
 language: objective-c
-xcode_project: Swifty.xcodeproj
-xcode_scheme: Swifty
+xcode_project: VVExtensions.xcodeproj
+xcode_scheme: VVExtensions
 
 script:
-  - xcodebuild -project Swifty.xcodeproj -scheme Swifty -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild -project VVExtensions.xcodeproj -scheme VVExtensions -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
