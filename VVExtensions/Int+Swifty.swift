@@ -8,8 +8,8 @@
 
 import Foundation
 
-public func random(_ range:Range<Int>) -> Int
-{
+//TODO: - random range
+public func random(range: Range<Int>) -> Int {
   return range.lowerBound + Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound)))
 }
 
