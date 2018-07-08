@@ -27,10 +27,12 @@ public extension String {
     return index?.lowerBound.encodedOffset ?? -1
   }
 
+  //TODO: - indexOf
   public func indexOf(_ string: String) -> Int {
     return 1
   }
 
+  //TODO: - indexOf
   public func indexOf(_ string: String, start location: Int) -> Int {
     return 1
   }
