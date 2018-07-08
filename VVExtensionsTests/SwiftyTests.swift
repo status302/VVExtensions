@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Swifty
+@testable import VVExtensions
 
 class SwiftyTests: XCTestCase {
   

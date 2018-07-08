@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Swifty
+import VVExtensions
 
 class AssociatedObject: NSObject {
   let intKey = "intValue.key"

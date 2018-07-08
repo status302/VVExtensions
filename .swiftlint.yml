@@ -1,16 +1,19 @@
 disabled_rules:
   - type_name
-  - variable_name
+  - identifier_name
   - todo
-  - function_name
+  - nesting
   - vertical_whitespace
   - trailing_whitespace
+  - function_body_length
 
 included:
-  - Swity
-  - SwiftyTests
+  - VVExtensions
+  - VVExtensionsTests
 
 line_length: 200
+
+cyclomatic_complexity: 50
 
 type_body_length:
   - 300
