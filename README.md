@@ -2,7 +2,7 @@
 
 > A good extension will help you a lot when Swift development.
 
-[![Build Status](https://travis-ci.org/qiuncheng/Swifty.svg?branch=master)](https://travis-ci.org/qiuncheng/Swifty)
+[![Build Status](https://travis-ci.org/qiuncheng/VVExtensions.svg?branch=master)](https://travis-ci.org/qiuncheng/VVExtensions)
 
 ## Usage
 
