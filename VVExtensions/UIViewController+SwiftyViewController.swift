@@ -10,21 +10,22 @@ import class UIKit.UIViewController
 
 public extension UIViewController {
   public var visible: UIViewController {
-    if presentedViewController == nil {
-      return self
-    } else if let nav = presentedViewController as? UINavigationController {
-      if let visibleController = nav.visibleViewController {
-        return visibleController.visible
-      } else {
-        return nav.visible
-      }
-    } else if let tab = presentedViewController as? UITabBarController {
-      if let selectedVC = tab.selectedViewController {
-        return selectedVC.visible
-      } else {
-        return tab.visible
-      }
+    var viewController: UIViewController?
+    if let navigationController = self as? UINavigationController {
+      viewController = navigationController.visibleViewController
     }
-    return presentedViewController!.visible
+    else if let tabBarController = self as? UITabBarController {
+      viewController = tabBarController.selectedViewController
+    }
+    else {
+      viewController = presentedViewController
+    }
+
+    if let viewController = viewController {
+      return viewController.visible
+    }
+    else {
+      return self
+    }
   }
 }
