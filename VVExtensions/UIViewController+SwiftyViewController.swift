@@ -29,3 +29,9 @@ public extension UIViewController {
     }
   }
 }
+
+public extension UIViewController {
+  public func setOrientation(_ orientation: UIInterfaceOrientation) {
+    currentDevice.setValue(orientation.rawValue, forKey: "orientation")
+  }
+}
