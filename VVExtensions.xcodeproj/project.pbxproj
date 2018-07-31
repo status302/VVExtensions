@@ -29,6 +29,7 @@
 		8674E49320D0267000425380 /* Timer+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674E49220D0267000425380 /* Timer+Swifty.swift */; };
 		8674E49520D0293F00425380 /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674E49420D0293F00425380 /* WeakProxy.swift */; };
 		8674E49720D029CD00425380 /* CADisplayLink+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8674E49620D029CD00425380 /* CADisplayLink+Swifty.swift */; };
+		86872879210B9C8B00B01B45 /* UICollectionView+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86872878210B9C8B00B01B45 /* UICollectionView+Swifty.swift */; };
 		869A1E4620B333CC00DB0751 /* Bool+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A1E4520B333CC00DB0751 /* Bool+Swifty.swift */; };
 		869A1E4920B3384C00DB0751 /* Bool+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A1E4820B3384C00DB0751 /* Bool+SwiftyTests.swift */; };
 		86A2748D2093838700D74C53 /* Array+SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */; };
@@ -79,6 +80,7 @@
 		8674E49220D0267000425380 /* Timer+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Swifty.swift"; sourceTree = "<group>"; };
 		8674E49420D0293F00425380 /* WeakProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakProxy.swift; sourceTree = "<group>"; };
 		8674E49620D029CD00425380 /* CADisplayLink+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CADisplayLink+Swifty.swift"; sourceTree = "<group>"; };
+		86872878210B9C8B00B01B45 /* UICollectionView+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Swifty.swift"; sourceTree = "<group>"; };
 		869A1E4520B333CC00DB0751 /* Bool+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Swifty.swift"; sourceTree = "<group>"; };
 		869A1E4820B3384C00DB0751 /* Bool+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+SwiftyTests.swift"; sourceTree = "<group>"; };
 		86A2748C2093838700D74C53 /* Array+SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SwiftyTests.swift"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				8674E49220D0267000425380 /* Timer+Swifty.swift */,
 				8674E49620D029CD00425380 /* CADisplayLink+Swifty.swift */,
 				8674E49420D0293F00425380 /* WeakProxy.swift */,
+				86872878210B9C8B00B01B45 /* UICollectionView+Swifty.swift */,
 			);
 			path = VVExtensions;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				869A1E4620B333CC00DB0751 /* Bool+Swifty.swift in Sources */,
 				8674E49520D0293F00425380 /* WeakProxy.swift in Sources */,
 				3F23F56A20934CC400E509E1 /* Optional+Swifty.swift in Sources */,
+				86872879210B9C8B00B01B45 /* UICollectionView+Swifty.swift in Sources */,
 				86A2749120938BE800D74C53 /* Date+Swifty.swift in Sources */,
 				86A87F1B20BB07E90046FB10 /* Dictionary+Swifty.swift in Sources */,
 				8662BB0B20A80B6C00CF00B1 /* NSObject+Swifty.swift in Sources */,
