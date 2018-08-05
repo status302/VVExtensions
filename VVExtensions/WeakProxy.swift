@@ -12,11 +12,8 @@ public class WeakProxy {
   internal weak var target: AnyObject?
   internal let selector: Selector
 
-  internal class var timerSelector: Selector {
-    return #selector(WeakProxy.performTimerSelector(timer:))
-  }
-  internal class var displayLinkSelector: Selector {
-    return #selector(WeakProxy.performDisplayLinkSelector(displayLink:))
+  internal class var selector: Selector {
+    return #selector(WeakProxy.performAction(action:))
   }
 
   public init(target: AnyObject, selector: Selector) {
@@ -24,11 +21,7 @@ public class WeakProxy {
     self.selector = selector
   }
 
-  @objc internal func performTimerSelector(timer: Timer) {
-    _ = target?.perform(selector, with: timer)
-  }
-
-  @objc internal func performDisplayLinkSelector(displayLink: CADisplayLink) {
-    _ = target?.perform(selector, with: displayLink)
+  @objc internal func performAction(action: NSObject) {
+    _ = target?.perform(selector, with: action)
   }
 }

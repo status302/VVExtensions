@@ -13,18 +13,15 @@ public extension UIViewController {
     var viewController: UIViewController?
     if let navigationController = self as? UINavigationController {
       viewController = navigationController.visibleViewController
-    }
-    else if let tabBarController = self as? UITabBarController {
+    } else if let tabBarController = self as? UITabBarController {
       viewController = tabBarController.selectedViewController
-    }
-    else {
+    } else {
       viewController = presentedViewController
     }
 
     if let viewController = viewController {
       return viewController.visible
-    }
-    else {
+    } else {
       return self
     }
   }
