@@ -1,0 +1,36 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+fastlane_version "2.116.0"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Release a new version to pods"
+  lane :release do |options|
+    # add actions here: https://docs.fastlane.tools/actions
+    new_version = options[:version]
+    raise "Version is missing" if new_version.nil?
+    ensure_git_branch
+    ensure_git_status_clean
+
+    version_bump_podspec(path: "VVExtensions.podspec", version_number: "#{new_version}")
+
+    git_commit(path: ["./*.swift", "./VVExtensions.podspec"], message: "Bump new version #{new_version}")
+    add_git_tag(tag: new_version)
+    push_to_git_remote
+    pod_push(allow_warnings: true)
+  end
+end
