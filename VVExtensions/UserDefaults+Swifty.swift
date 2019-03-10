@@ -16,7 +16,9 @@ public class Keys: RawRepresentable, Hashable {
 
   public let rawValue: String
 
-  public var hashValue: Int { return rawValue.hashValue }
+  public func hash(into hasher: inout Hasher) {
+    hasher.combine(self.rawValue)
+  }
 
   public required init?(rawValue: String) {
     self.rawValue = rawValue

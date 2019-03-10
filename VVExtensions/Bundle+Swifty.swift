@@ -37,19 +37,12 @@ extension Bundle {
   }
 
   internal var internalInfo: Info? {
-    set {
+    if let info = associatedValue(forKey: AssociatedKey.keyOfInfoPlist) as? Info {
+      return info
+    } else {
       let info = try? infoPlist()
       associate(forKey: AssociatedKey.keyOfInfoPlist, value: info, type: .retainNonatomic)
-    }
-
-    get {
-      if let info = associatedValue(forKey: AssociatedKey.keyOfInfoPlist) as? Info {
-        return info
-      } else {
-        let info = try? infoPlist()
-        associate(forKey: AssociatedKey.keyOfInfoPlist, value: info, type: .retainNonatomic)
-        return info
-      }
+      return info
     }
   }
 

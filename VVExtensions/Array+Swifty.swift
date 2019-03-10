@@ -96,6 +96,21 @@ public extension Array where Element: Equatable {
   }
 }
 
+public extension Array {
+  public func groups(byCount count: Int) -> [[Element]] {
+    guard self.count > count else { return [self] }
+    let groupCount = (self.count % count > 0) ? self.count / count + 1 : self.count / count
+    var newArray: [[Element]] = []
+    for i in 0 ..< groupCount {
+      let max = Swift.min(self.count, (i + 1) * count)
+      let temp = self[i * count ..< max]
+      newArray.append(Array(temp))
+    }
+    return newArray
+
+  }
+}
+
 public extension Array where Element: SignedInteger {
 
   public var sum: Element {

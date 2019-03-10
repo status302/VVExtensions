@@ -21,7 +21,7 @@ class Bundle_SwiftyTests: XCTestCase {
   }
 
   func testInfoVersion() {
-    XCTAssert(info?.version == "0.0.1")
+    XCTAssert(info?.version == "0.0.2")
   }
 
   func testInfoBuild() {

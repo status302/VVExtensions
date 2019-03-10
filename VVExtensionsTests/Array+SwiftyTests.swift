@@ -89,4 +89,19 @@ class ArraySwiftyTests: XCTestCase {
     let array = [7, 1, 5, 4, 5, 6]
     XCTAssert(array.average == 28 / 6)
   }
+  
+  func testGroups() {
+    let array = [1, 2, 3, 4]
+    let groups0 = array.groups(byCount: 2)
+    assert(groups0.count == 2)
+    assert(groups0 == [[1, 2], [3, 4]])
+    
+    let groups1 = array.groups(byCount: 5)
+    assert(groups1.count == 1)
+    assert(groups1 == [[1, 2, 3, 4]])
+    
+    let groups2 = array.groups(byCount: 4)
+    assert(groups2.count == 1)
+    assert(groups2 == [[1, 2, 3, 4]])
+  }
 }
