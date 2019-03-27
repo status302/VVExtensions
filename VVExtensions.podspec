@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "https://twitter.com/vsccw"
 
   s.platform = :ios, "9.0"
-  s.swift_version = "4.2"
+  s.swift_version = "5.0"
 
   s.source = {:git => "https://github.com/qiuncheng/VVExtensions.git", :tag => "#{s.version}"}
 
