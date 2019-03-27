@@ -15,19 +15,19 @@ public func random(range: Range<Int>) -> Int {
 
 /// extension for DispatchTimeInterval
 public extension Int {
-  public var seconds: DelayInterval {
+  var seconds: DelayInterval {
     return .init(seconds: self)
   }
 
-  public var microseconds: DelayInterval {
+  var microseconds: DelayInterval {
     return .init(microseconds: self)
   }
 
-  public var milliseconds: DelayInterval {
+  var milliseconds: DelayInterval {
     return .init(milliseconds: self)
   }
 
-  public var nanoseconds: DelayInterval {
+  var nanoseconds: DelayInterval {
     return .init(nanoseconds: self)
   }
 }

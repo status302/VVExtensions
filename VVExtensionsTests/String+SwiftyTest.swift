@@ -22,6 +22,12 @@ class StringSwiftyTest: XCTestCase {
     XCTAssert(type(of: hello.str) == String.self)
   }
 
+  func testLastIndexOf() {
+    let hello = "hello"
+    let index = hello.lastIndexOf("lo")
+    XCTAssert(index == 3)
+  }
+  
   func testRandomPassword() {
     let password = String.randomPassword(length: 5)
     XCTAssertEqual(password.count, 5)

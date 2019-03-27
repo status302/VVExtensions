@@ -10,7 +10,7 @@ import Foundation
 
 public extension Optional {
 
-  public func or(_ value: Wrapped) -> Wrapped {
+  func or(_ value: Wrapped) -> Wrapped {
     if let ret = self {
       return ret
     } else {
@@ -18,20 +18,20 @@ public extension Optional {
     }
   }
 
-  public var isNil: Bool {
+  var isNil: Bool {
     switch self {
     case .none: return true
     case .some: return false
     }
   }
 
-  public func apply(_ function: (Wrapped) -> Void) {
+  func apply(_ function: (Wrapped) -> Void) {
     self.map(function)
   }
 }
 
 public extension Optional where Wrapped: Collection {
-  public var isNilOrEmpty: Bool {
+  var isNilOrEmpty: Bool {
     switch self {
     case .none:            return true
     case .some(let value): return value.isEmpty
@@ -40,7 +40,7 @@ public extension Optional where Wrapped: Collection {
 }
 
 public extension Optional where Wrapped: StringProtocol {
-  public var isNilOrEmpty: Bool {
+  var isNilOrEmpty: Bool {
     switch self {
     case .none:            return true
     case .some(let value): return value.isEmpty
@@ -49,7 +49,7 @@ public extension Optional where Wrapped: StringProtocol {
 }
 
 public extension Optional where Wrapped == String {
-  public var orEmpty: String {
+  var orEmpty: String {
     return self.or("")
   }
 }

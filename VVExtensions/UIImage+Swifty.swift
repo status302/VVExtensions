@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIImage {
-  public class func createImage(with color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage? {
+  class func createImage(with color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage? {
     UIGraphicsBeginImageContextWithOptions(size, false, 0)
     color.setFill()
     UIRectFill(CGRect(origin: .zero, size: size))
@@ -18,11 +18,11 @@ public extension UIImage {
     return image
   }
 
-  public func color(forPoint point: CGPoint) -> UIColor {
+  func color(forPoint point: CGPoint) -> UIColor {
     return .clear
   }
 
-  public func fillColor(_ color: UIColor) -> UIImage? {
+  func fillColor(_ color: UIColor) -> UIImage? {
     let newImage = withRenderingMode(.alwaysTemplate)
     UIGraphicsBeginImageContextWithOptions(newImage.size, false, newImage.scale)
     let context = UIGraphicsGetCurrentContext()

@@ -9,11 +9,11 @@
 import UIKit
 
 public extension UIColor {
-  public convenience init(rgb: Int) {
+  convenience init(rgb: Int) {
     self.init(rgb: rgb, alpha: 1.0)
   }
 
-  public convenience init(rgb: Int, alpha: CGFloat) {
+  convenience init(rgb: Int, alpha: CGFloat) {
     let red = CGFloat((rgb >> 16) & 0xFF) / 255.0
     let green = CGFloat((rgb >> 8) & 0xFF) / 255.0
     let blue = CGFloat(rgb & 0xFF) / 255.0
@@ -30,7 +30,7 @@ public extension UIColor {
     let alpha: CGFloat
   }
 
-  public func transitionToColor(_ color: UIColor, ratio: CGFloat) -> UIColor {
+  func transitionToColor(_ color: UIColor, ratio: CGFloat) -> UIColor {
     let offset = calculateColorOffset(withColor: color)
     let current = rgbs
     let red = current.red + ratio * offset.red

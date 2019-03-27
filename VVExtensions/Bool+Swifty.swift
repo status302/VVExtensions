@@ -9,12 +9,12 @@
 import Foundation
 
 public extension Bool {
-  public var toggle: Bool {
+  var toggle: Bool {
     return !self
   }
 
   @discardableResult
-  public mutating func setToggle() -> Bool {
+  mutating func setToggle() -> Bool {
     self = !self
     return self
   }

@@ -16,7 +16,7 @@ let keyOfModelName: String = "com.vsccw.UIDevice.modelName"
 
 public extension UIDevice {
   
-  public var modelName: String {
+  var modelName: String {
     if let localModelName = localModelName {
       return localModelName
     }
@@ -26,23 +26,23 @@ public extension UIDevice {
     return name
   }
   
-  public var type: Type {
+  var type: Type {
     return Type(rawValue: modelName) ?? .unknown
   }
   
-  public var isIPod: Bool {
+  var isIPod: Bool {
     return type == .iPodTouch5 || type == .iPodTouch6
   }
   
-  public var isIPhone: Bool {
+  var isIPhone: Bool {
     return allPhone.contains(type)
   }
   
-  public var isIPad: Bool {
+  var isIPad: Bool {
     return allPad.contains(type)
   }
   
-  public var isSimulator: Bool {
+  var isSimulator: Bool {
     return type == .simulator
   }
   

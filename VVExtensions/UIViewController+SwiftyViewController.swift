@@ -9,7 +9,7 @@
 import class UIKit.UIViewController
 
 public extension UIViewController {
-  public var visible: UIViewController {
+  var visible: UIViewController {
     var viewController: UIViewController?
     if let navigationController = self as? UINavigationController {
       viewController = navigationController.visibleViewController
@@ -28,7 +28,7 @@ public extension UIViewController {
 }
 
 public extension UIViewController {
-  public func setOrientation(_ orientation: UIInterfaceOrientation) {
+  func setOrientation(_ orientation: UIInterfaceOrientation) {
     currentDevice.setValue(orientation.rawValue, forKey: "orientation")
   }
 }

@@ -17,15 +17,15 @@ public var globalQueue: DispatchQueue {
 }
 
 public extension DispatchQueue {
-  public func delay(_ duration: DelayInterval, execute: @escaping () -> Void) {
+  func delay(_ duration: DelayInterval, execute: @escaping () -> Void) {
     asyncAfter(deadline: .now() + duration.timeInterval, execute: execute)
   }
 
-  public func delay(_ duration: DelayInterval, excute: DispatchWorkItem) {
+  func delay(_ duration: DelayInterval, excute: DispatchWorkItem) {
     asyncAfter(deadline: .now() + duration.timeInterval, execute: excute)
   }
 
-  public func once(_ label: String, execute: () -> Void) {
+  func once(_ label: String, execute: () -> Void) {
     objc_sync_enter(self)
     defer { objc_sync_exit(self) }
     guard !Tracker.contains(label) else { return }

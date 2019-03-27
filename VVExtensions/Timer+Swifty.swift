@@ -9,11 +9,11 @@
 import class Foundation.NSTimer
 
 public extension Timer {
-  public class func scheduledTimer(timerInterval ti: TimeInterval, proxy: WeakProxy, userInfo: Any?, repeats yesOrNo: Bool) -> Timer {
+  class func scheduledTimer(timerInterval ti: TimeInterval, proxy: WeakProxy, userInfo: Any?, repeats yesOrNo: Bool) -> Timer {
     return Timer.scheduledTimer(timeInterval: ti, target: proxy, selector: WeakProxy.selector, userInfo: userInfo, repeats: yesOrNo)
   }
 
-  public convenience init(timeInterval ti: TimeInterval, proxy: WeakProxy, userInfo: Any?, repeats yesOrNo: Bool) {
+  convenience init(timeInterval ti: TimeInterval, proxy: WeakProxy, userInfo: Any?, repeats yesOrNo: Bool) {
     self.init(timeInterval: ti, target: proxy, selector: WeakProxy.selector, userInfo: userInfo, repeats: yesOrNo)
   }
 
@@ -37,22 +37,22 @@ internal class TimerAction {
 }
 
 public extension Timer {
-  public convenience init(fromNow ti: TimeInterval, block: @escaping Block) {
+  convenience init(fromNow ti: TimeInterval, block: @escaping Block) {
     let action = TimerAction(block: block)
     self.init(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: false)
   }
 
-  public convenience init(every ti: TimeInterval, block: @escaping Block) {
+  convenience init(every ti: TimeInterval, block: @escaping Block) {
     let action = TimerAction(block: block)
     self.init(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: true)
   }
 
-  public class func schedule(fromNow ti: TimeInterval, block: @escaping Block) -> Timer {
+  class func schedule(fromNow ti: TimeInterval, block: @escaping Block) -> Timer {
     let action = TimerAction(block: block)
     return Timer.scheduledTimer(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: false)
   }
 
-  public class func schedule(every ti: TimeInterval, block: @escaping Block) -> Timer {
+  class func schedule(every ti: TimeInterval, block: @escaping Block) -> Timer {
     let action = TimerAction(block: block)
     return Timer.scheduledTimer(timeInterval: ti, target: action, selector: #selector(TimerAction.fire), userInfo: nil, repeats: true)
   }

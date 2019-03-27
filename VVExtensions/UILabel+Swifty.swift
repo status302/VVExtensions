@@ -10,7 +10,7 @@ import UIKit
 
 public extension UILabel {
 
-  public func contentHeight(maxWidth width: CGFloat) -> CGFloat {
+  func contentHeight(maxWidth width: CGFloat) -> CGFloat {
     let label = UILabel()
     label.font = font
     label.textAlignment = textAlignment
@@ -24,7 +24,7 @@ public extension UILabel {
     return label.frame.height
   }
 
-  public func contentWidth(maxHeight height: CGFloat) -> CGFloat {
+  func contentWidth(maxHeight height: CGFloat) -> CGFloat {
     let label = UILabel()
     label.font = font
     label.textAlignment = textAlignment

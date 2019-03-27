@@ -9,44 +9,44 @@
 import Foundation
 
 public extension String {
-  public var nsstr: NSString {
+  var nsstr: NSString {
     return self as NSString
   }
 }
 
 public extension NSString {
-  public var str: String {
+  var str: String {
     return self as String
   }
 }
 
 // MARK: - index
 public extension String {
-  public func lastIndexOf(_ string: String) -> Int {
-    let index = range(of: string)
-    return index?.lowerBound.encodedOffset ?? -1
+  func lastIndexOf(_ string: String) -> Int {
+    let range = self.range(of: string, options: .backwards, range: nil, locale: nil)
+    return range?.lowerBound.utf16Offset(in: self) ?? -1
   }
 
   //TODO: - indexOf
-  public func indexOf(_ string: String) -> Int {
+  func indexOf(_ string: String) -> Int {
     return 1
   }
 
   //TODO: - indexOf
-  public func indexOf(_ string: String, start location: Int) -> Int {
+  func indexOf(_ string: String, start location: Int) -> Int {
     return 1
   }
 }
 
 // MARK: - length
 public extension String {
-  public var length: Int {
+  var length: Int {
     return unicodeScalars.count
   }
 }
 
 public extension String {
-  public static func randomPassword(length: Int) -> String {
+  static func randomPassword(length: Int) -> String {
     let allCharacters = ["a", "b", "c", "d", "e", "f",
                          "g", "h", "i", "j", "k", "l",
                          "m", "n", "o", "p", "q", "r",

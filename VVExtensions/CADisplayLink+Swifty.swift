@@ -9,7 +9,7 @@
 import QuartzCore.CADisplayLink
 
 public extension CADisplayLink {
-  public convenience init(proxy: WeakProxy) {
+  convenience init(proxy: WeakProxy) {
     self.init(target: proxy, selector: WeakProxy.selector)
   }
 }

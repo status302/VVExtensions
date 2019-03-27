@@ -11,7 +11,7 @@ import ObjectiveC.objc
 
 public extension NSObject {
 
-  public enum AssociatedType {
+  enum AssociatedType {
     case assign
     case retain
     case retainNonatomic
@@ -34,12 +34,12 @@ public extension NSObject {
     }
   }
 
-  public func associatedValue(forKey key: String) -> Any? {
+  func associatedValue(forKey key: String) -> Any? {
     guard let keyPointer = UnsafeRawPointer(bitPattern: key.hash) else { return nil }
     return objc_getAssociatedObject(self, keyPointer)
   }
 
-  public func associate(forKey key: String, value: Any?, type: AssociatedType) {
+  func associate(forKey key: String, value: Any?, type: AssociatedType) {
     guard let keyPointer = UnsafeRawPointer(bitPattern: key.hash) else { return }
     objc_setAssociatedObject(self, keyPointer, value, type.policy)
   }

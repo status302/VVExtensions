@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UICollectionView {
-  public func reloadDataWithoutAnimation() {
+  func reloadDataWithoutAnimation() {
     CATransaction.begin()
     CATransaction.disableActions()
     reloadData()

@@ -30,7 +30,7 @@ public class Keys: RawRepresentable, Hashable {
 }
 
 public extension UserDefaults {
-  public subscript (key: Key<Bool>) -> Bool {
+  subscript (key: Key<Bool>) -> Bool {
     set {
       set(newValue, forKey: key.rawValue)
     }
@@ -39,7 +39,7 @@ public extension UserDefaults {
     }
   }
 
-  public subscript (key: Key<String>) -> String? {
+  subscript (key: Key<String>) -> String? {
     set {
       set(newValue, forKey: key.rawValue)
     }
@@ -48,7 +48,7 @@ public extension UserDefaults {
     }
   }
 
-  public subscript (key: Key<Int>) -> Int {
+  subscript (key: Key<Int>) -> Int {
     set {
       set(newValue, forKey: key.rawValue)
     }
@@ -57,7 +57,7 @@ public extension UserDefaults {
     }
   }
 
-  public subscript (key: Key<[Any]>) -> [Any]? {
+  subscript (key: Key<[Any]>) -> [Any]? {
     set {
       set(newValue, forKey: key.rawValue)
     }
@@ -66,7 +66,7 @@ public extension UserDefaults {
     }
   }
 
-  public subscript (key: Key<Data>) -> Data? {
+  subscript (key: Key<Data>) -> Data? {
     set {
       set(newValue, forKey: key.rawValue)
     }
@@ -75,7 +75,7 @@ public extension UserDefaults {
     }
   }
 
-  public subscript (key: Key<URL>) -> URL? {
+  subscript (key: Key<URL>) -> URL? {
     set {
       set(newValue, forKey: key.rawValue)
     }
@@ -84,7 +84,7 @@ public extension UserDefaults {
     }
   }
 
-  public subscript (key: Key<[String: Any?]>) -> [String: Any?]? {
+  subscript (key: Key<[String: Any?]>) -> [String: Any?]? {
     set {
       set(newValue, forKey: key.rawValue)
     }
