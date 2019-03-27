@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "VVExtensions"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
   s.summary = "Some useful extensions will help you a lot when Swift dev."
 
   s.description = <<-DESC
